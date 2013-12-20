@@ -1,0 +1,4 @@
+-cp haxe/src
+-debug
+-main Main
+-swf bin/TestHaxe.swf

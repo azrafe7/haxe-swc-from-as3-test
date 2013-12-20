@@ -1,0 +1,5 @@
+-cp haxe/src
+-debug
+-swf-version 11.2
+--macro include('mylib')
+-swf as3\lib\mylib.swc
