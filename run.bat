@@ -38,7 +38,7 @@ pause
 
 echo.
 echo Running AS3 version with SWC (bin\TestSWCfromAS3.swf)...
-start bin\TestSWCfromAS3.swf
+fdb bin\TestSWCfromAS3.swf < fdb.txt
 if errorlevel 1 goto fail
 if errorlevel 0 echo ...done
 goto end
