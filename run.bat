@@ -5,16 +5,16 @@ del as3\lib\*.* /q
 echo Project cleaned (bin and as3\lib folders).
 echo.
 
-echo Building Haxe version (bin\TestHaxe.swf)...
-haxe test_haxe.hxml
+echo Building Haxe version (bin\flash\bin\TestHaxe.swf)...
+call lime build haxe\project.xml flash --app-path="..\bin"
 if errorlevel 1 goto fail
 if errorlevel 0 echo ...done
 echo.
 pause
 
 echo.
-echo Running Haxe version (bin\TestHaxe.swf)...
-start bin\TestHaxe.swf
+echo Running Haxe version (bin\flash\bin\TestHaxe.swf)...
+start bin\flash\bin\TestHaxe.swf
 if errorlevel 1 goto fail
 if errorlevel 0 echo ...done
 echo.
@@ -38,7 +38,7 @@ pause
 
 echo.
 echo Running AS3 version with SWC (bin\TestSWCfromAS3.swf)...
-fdb bin\TestSWCfromAS3.swf < fdb.txt
+start bin\TestSWCfromAS3.swf
 if errorlevel 1 goto fail
 if errorlevel 0 echo ...done
 goto end

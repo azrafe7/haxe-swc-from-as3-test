@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="TestHaxe" package="com.example.testhaxe" version="1.0.0" company="Company Name" />
+	<app main="Main" path="bin" file="TestHaxe" />
+	<window width="640" height="480" fps="60" background="#101010" hardware="true" vsync="true" />
+	
+	<source path="src" />
+	
+	<haxelib name="openfl" />
+	
+</project>

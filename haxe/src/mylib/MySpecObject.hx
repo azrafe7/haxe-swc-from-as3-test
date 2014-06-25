@@ -1,8 +1,6 @@
 package mylib;
-import flash.display.Graphics;
 
-
-class MyObject extends MyRect
+class MySpecObject extends MyObject
 {
 
 	public function new() 
@@ -22,21 +20,8 @@ class MyObject extends MyRect
 		return value;
 	}
 	
-	public function setText(s:String):Void 
-	{
-		
-	}
-	
-	public function update():Void 
+	override public function update():Void 
 	{
 		trace("update(): width = " + _width);
 	}
-	
-	static public function drawRect(g:Graphics, x:Float, y:Float, width:Float, height:Float):Void 
-	{
-		g.lineStyle(1, 0xff0000);
-		g.drawRect(x, y, width, height);
-	}
-	
-	private var _width:Int = 0;
 }

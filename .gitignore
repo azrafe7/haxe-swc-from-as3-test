@@ -1,4 +1,7 @@
 # Build and Release Folders
+haxe/bin/
+as3/obj/
+bin/
 
 # Other files and folders
 .settings/
