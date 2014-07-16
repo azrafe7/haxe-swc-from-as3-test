@@ -19,3 +19,5 @@ I'm trying to find a workaround for that (actually I've found out it's possible 
 then the get_??? and set_??? will not be hidden).
  
 **Note:** `mxmlc`, `haxe` and `fdb` must be in the path. Only tested on Win (7).
+
+**EDIT:** see the `openfl` branch for an attempt to cope with it.
